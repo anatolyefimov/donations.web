@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/donations.web/static/css/main.001969e1.chunk.css",
-    "main.js": "/donations.web/static/js/main.e9c01120.chunk.js",
-    "main.js.map": "/donations.web/static/js/main.e9c01120.chunk.js.map",
+    "main.js": "/donations.web/static/js/main.4b7d3131.chunk.js",
+    "main.js.map": "/donations.web/static/js/main.4b7d3131.chunk.js.map",
     "runtime-main.js": "/donations.web/static/js/runtime-main.34f85380.js",
     "runtime-main.js.map": "/donations.web/static/js/runtime-main.34f85380.js.map",
     "static/css/2.09e62520.chunk.css": "/donations.web/static/css/2.09e62520.chunk.css",
     "static/js/2.6fe17eb3.chunk.js": "/donations.web/static/js/2.6fe17eb3.chunk.js",
     "static/js/2.6fe17eb3.chunk.js.map": "/donations.web/static/js/2.6fe17eb3.chunk.js.map",
     "index.html": "/donations.web/index.html",
-    "precache-manifest.8f4900dd2ffc36b307bf1b557f9aea90.js": "/donations.web/precache-manifest.8f4900dd2ffc36b307bf1b557f9aea90.js",
+    "precache-manifest.e1123183dd91b34f3ad554ec994ec6b0.js": "/donations.web/precache-manifest.e1123183dd91b34f3ad554ec994ec6b0.js",
     "service-worker.js": "/donations.web/service-worker.js",
     "static/css/2.09e62520.chunk.css.map": "/donations.web/static/css/2.09e62520.chunk.css.map",
     "static/css/main.001969e1.chunk.css.map": "/donations.web/static/css/main.001969e1.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.09e62520.chunk.css",
     "static/js/2.6fe17eb3.chunk.js",
     "static/css/main.001969e1.chunk.css",
-    "static/js/main.e9c01120.chunk.js"
+    "static/js/main.4b7d3131.chunk.js"
   ]
 }
