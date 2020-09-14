@@ -18,7 +18,7 @@ import Icon24DismissOverlay from '@vkontakte/icons/dist/24/dismiss_overlay';
 
 import './CollectingForm.css'
 
-const CollectingForm = ({id, go, type, currentSettings, setCurrentSettings, setSnippets}) => {
+const CollectingForm = ({id, go, type, currentSettings, setCurrentSettings, setSnippets, user}) => {
     const [imageSrc, setImageSrc] = useState(currentSettings.imageSrc);
     const [name, setName] = useState(currentSettings.name);
     const [sum, setSum] = useState(currentSettings.sum);
@@ -62,7 +62,8 @@ const CollectingForm = ({id, go, type, currentSettings, setCurrentSettings, setS
                 ...currentSettings,
                 name: name,
                 sum: sum,
-                imageSrc: imageSrc
+                imageSrc: imageSrc,
+                user: user
             }))
             setCurrentSettings({})
         }
@@ -80,6 +81,7 @@ const CollectingForm = ({id, go, type, currentSettings, setCurrentSettings, setS
                     imageSrc ? (
                         <Div className='cover-container'>
                             <img 
+                                alt='Обложка'
                                 src={imageSrc} 
                                 className='cover-container__cover'
                             />
@@ -140,7 +142,7 @@ const CollectingForm = ({id, go, type, currentSettings, setCurrentSettings, setS
                 {
                     type === 'regular' &&
                     <Select top='Автор'>
-                        <option value='stub'>Матвей Правосудов</option>
+                        <option value='user'>{user}</option>
                     </Select>
                 }
                 <FormStatus style={{display: formStatus !== 'error' ? 'none' : 'block' }}mode={formStatus} header='Не все обязательные поля заполнены'>

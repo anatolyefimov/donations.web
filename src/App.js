@@ -11,7 +11,7 @@ import Result from 'panels/Result'
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('donations');
-	const [fetchedUser, setUser] = useState(null);
+	const [fetchedUser, setUser] = useState('Матвей Правосудов');
 	const [snippets, setSnippets] = useState([]);
 	const [currentSettings, setCurrentSettings] = useState({
 		type: null
@@ -27,7 +27,7 @@ const App = () => {
 		});
 		async function fetchData() {
 			const user = await bridge.send('VKWebAppGetUserInfo');
-			setUser(user);
+			setUser(user.first_name + ' ' + user.last_name);
 		}
 		fetchData();
 	}, []);
@@ -55,6 +55,7 @@ const App = () => {
 				currentSettings={currentSettings}
 				setCurrentSettings={setCurrentSettings}
 				setSnippets={setSnippets}
+				user={fetchedUser}
 			/>
 			<ExtraSettings 
 				id='extra-settings' 
@@ -62,6 +63,7 @@ const App = () => {
 				currentSettings={currentSettings}
 				setCurrentSettings={setCurrentSettings}
 				setSnippets={setSnippets}
+				user={fetchedUser}
 			/>
 			<Result 
 				id='result' 

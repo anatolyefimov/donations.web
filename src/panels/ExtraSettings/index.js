@@ -6,7 +6,6 @@ import {
     PanelHeader,
     FormLayout,
     PanelHeaderBack,
-    Div,
     Input, 
     Radio,
     FormLayoutGroup,
@@ -14,7 +13,7 @@ import {
     Button
 } from '@vkontakte/vkui';
 
-const ExtraSettings = ({ id, go, setSnippets, setCurrentSettings, currentSettings }) => {
+const ExtraSettings = ({ id, go, setSnippets, setCurrentSettings, currentSettings, user }) => {
     let now = new Date()
     now = now.getFullYear() + '-' + ('0' + (now.getMonth() + 1)).slice(-2) + '-' + ('0' + now.getDate()).slice(-2);
     const [date, setDate] = useState(now);
@@ -25,7 +24,8 @@ const ExtraSettings = ({ id, go, setSnippets, setCurrentSettings, currentSetting
         setSnippets(prevSnippets => prevSnippets.concat({
             ...currentSettings,
             date: date,
-            radio: radio
+            radio: radio,
+            user: user
         }))
         setCurrentSettings({});
     }
@@ -39,7 +39,7 @@ const ExtraSettings = ({ id, go, setSnippets, setCurrentSettings, currentSetting
             </PanelHeader>
             <FormLayout>
                 <Select top='Автор'>
-                    <option value='stub'>Матвей Правосудов</option>
+                    <option value='user'>{user}</option>
                 </Select>
                 <FormLayoutGroup top="Сбор завершится">
                     <Radio 

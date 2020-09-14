@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
-import PropTypes, { number } from 'prop-types';
+import React from 'react';
 import accounting from 'accounting';
 
 import {  
-    Div, 
-    Button,
     Card,
-    Banner,
     Separator,
     InfoRow,
     Progress
@@ -42,6 +38,7 @@ const Snippet = ({ data }) => {
     return (
         <Card className='Snippet' mode='outline'>
             <img 
+                alt='Обложка'
                 src={data.imageSrc} 
                 className='Snippet__image'
             />
@@ -50,7 +47,7 @@ const Snippet = ({ data }) => {
                     {data.name}
                 </h1>
                 <h2>
-                    Матвей Правосудов{rightSubheader}
+                    {data.user + rightSubheader}
                 </h2>
                 <Separator wide/>
                 <InfoRow 
