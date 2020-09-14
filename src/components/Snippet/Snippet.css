@@ -1,0 +1,41 @@
+.Snippet {
+    margin-bottom: 20px;
+    width: 360px
+}
+
+.Snippet__image {
+    height: 140px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.Snippet h1 {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 8px 0 0;
+}
+
+.Snippet h2 {
+    font-size: 13px;
+    line-height: 16px;
+    color:  #818C99;
+    font-weight: normal;
+    margin: 0 0 8px 0;
+}
+
+.Snippet__info {
+    padding: 12px
+}
+
+.Snippet__progress {
+    margin-top: 12px;
+}
+
+@media (max-width: 380px) { 
+    .Snippet {
+        width: 300px
+    }
+ }
