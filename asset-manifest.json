@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/donations.web/static/css/main.001969e1.chunk.css",
+    "main.js": "/donations.web/static/js/main.e9c01120.chunk.js",
+    "main.js.map": "/donations.web/static/js/main.e9c01120.chunk.js.map",
+    "runtime-main.js": "/donations.web/static/js/runtime-main.34f85380.js",
+    "runtime-main.js.map": "/donations.web/static/js/runtime-main.34f85380.js.map",
+    "static/css/2.09e62520.chunk.css": "/donations.web/static/css/2.09e62520.chunk.css",
+    "static/js/2.6fe17eb3.chunk.js": "/donations.web/static/js/2.6fe17eb3.chunk.js",
+    "static/js/2.6fe17eb3.chunk.js.map": "/donations.web/static/js/2.6fe17eb3.chunk.js.map",
+    "index.html": "/donations.web/index.html",
+    "precache-manifest.8f4900dd2ffc36b307bf1b557f9aea90.js": "/donations.web/precache-manifest.8f4900dd2ffc36b307bf1b557f9aea90.js",
+    "service-worker.js": "/donations.web/service-worker.js",
+    "static/css/2.09e62520.chunk.css.map": "/donations.web/static/css/2.09e62520.chunk.css.map",
+    "static/css/main.001969e1.chunk.css.map": "/donations.web/static/css/main.001969e1.chunk.css.map",
+    "static/js/2.6fe17eb3.chunk.js.LICENSE.txt": "/donations.web/static/js/2.6fe17eb3.chunk.js.LICENSE.txt",
+    "static/media/Icon24Aim.67517735.svg": "/donations.web/static/media/Icon24Aim.67517735.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.34f85380.js",
+    "static/css/2.09e62520.chunk.css",
+    "static/js/2.6fe17eb3.chunk.js",
+    "static/css/main.001969e1.chunk.css",
+    "static/js/main.e9c01120.chunk.js"
+  ]
+}
